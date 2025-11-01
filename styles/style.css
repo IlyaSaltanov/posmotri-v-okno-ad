@@ -107,16 +107,30 @@ ol {
   padding-right: 198px;
   padding-left: 198px; */
   display: grid;
-  width: 390px;
-  height: 566px;
+  /* width: 390px; Закоментировал эту ширишу потому что появлялся
+  горизонтальный скролл. Теперь этот конейнер подстраивается под ширину содержимых блоков
+  Разница была в 9px*/
+  /* height: 566px; */
+  height: 298px;
   gap: 30px;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .content__list{
   display: grid;
   gap: 30px;
 }
+
+.content__list-item{
+  display: grid;
+  /* gap: ; */
+  width: 390px;
+  height: 103px;
+  gap: 30px 0px;
+}
+
+
+
 
 
 
@@ -156,26 +170,12 @@ ol {
 }
 
 
-
-
-
-
-
-
-
-/* .search-form__label{
-  display: grid;
-  grid-column: 10;
-  justify-content: space-around;
-} */
-
-.content__list-item{
-  display: grid;
-  /* gap: ; */
+.content__card-link{
   width: 390px;
   height: 103px;
-  gap: 30px 0px;
+
 }
+
 
 .content__video-card{
   /* То как было до: */
@@ -190,43 +190,6 @@ ol {
   gap: 30px 0px;
 }
 
-.content__video-card-thumbnail{
-  width: 194px;
-  height: 103px;
-  object-fit: cover;
-  object-position: center;
-}
-
-.content__card-link{
-  width: 390px;
-  height: 103px;
-
-}
-
-.search-form__fieldset-title{
-  font-family: Fira Sans Condensed;
-  font-weight: 400;
-  /* font-style: Regular; */
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
-
-}
-
-
-
-
-
-.content__accent{
-  font-family: Oswald;
-  font-weight: 700;
-  /* font-style: Bold; */
-  font-size: 75px;
-  line-height: 94%;
-  letter-spacing: 0;
-  text-transform: uppercase;
-  color: grey;
-}
 
 .content__video-card-description-container{
   /* flex-grow:inherit; Зачем он мне нужен?????? */
@@ -240,6 +203,7 @@ ol {
   "content__video-card-description"; */
   
 }
+
 
 .content__video-card-title{
   grid-area: content__video-card-title;
@@ -269,6 +233,66 @@ ol {
   height: 17px;
   margin-top: 6px;
 }
+
+
+.content__video-card-thumbnail{
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+
+
+
+
+
+
+/* .search-form__label{
+  display: grid;
+  grid-column: 10;
+  justify-content: space-around;
+} */
+
+
+
+
+
+
+
+
+
+.search-form__fieldset-title{
+  font-family: Fira Sans Condensed;
+  font-weight: 400;
+  /* font-style: Regular; */
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+
+
+
+
+.content__accent{
+  font-family: Oswald;
+  font-weight: 700;
+  /* font-style: Bold; */
+  font-size: 75px;
+  line-height: 94%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: grey;
+}
+
+
+
+
+
+
 
 /* .content__video-card-title{
   text-decoration: none;
