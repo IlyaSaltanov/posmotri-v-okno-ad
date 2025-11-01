@@ -74,20 +74,15 @@ ol {
   align-items: end;
 }
 
-/* .result{
+.result{
   display: grid;
   align-items: end;
   grid-template-areas: 
   "result__video",
   "search-form";
-} */
-
-.result__video {
-  width: 711px;
-  height: 386px;
-  object-fit: cover;
-  grid-area: result__video;
 }
+
+
 
 .content__details{
   grid-area: content__details;
@@ -166,7 +161,14 @@ ol {
   height: 386px;
   object-fit: cover;
   grid-area: result__video;
-  /* position: relative; Добавил данную строчку стобы сверствть ошибку */
+  position: relative;
+}
+
+.result__video {
+  width: 711px;
+  height: 386px;
+  object-fit: cover;
+  grid-area: result__video;
 }
 
 .search-form{
