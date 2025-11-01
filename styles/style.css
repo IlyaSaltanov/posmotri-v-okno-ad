@@ -49,3 +49,34 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+
+
+/* New code */
+
+.page{
+  display: flex;
+
+}
+
+.content{
+  display: grid;
+  grid-template-areas: 
+  "result__video-container content__details";
+}
+
+.result__video-container{
+  grid-area: result__video-container;
+  /* width: 711;
+  height: 456;
+  gap: 16px;
+  angle: 0 deg;
+  opacity: 1; */
+
+}
+
+.search-form{
+  grid-area: search-form;
+}
+.content__details{
+  grid-area: content__details;
+}
