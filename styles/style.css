@@ -76,6 +76,9 @@ ol {
 .result{
   display: grid;
   align-items: end;
+  grid-template-areas: 
+  "result__video",
+  "search-form";
 }
 .result__video-container{
   grid-area: result__video-container;
@@ -85,17 +88,85 @@ ol {
   align-items: end;
 }
 
+.result__video{
+  width: 711px;
+  height: 386px;
+  object-fit: cover;
+  grid-area: result__video;
+}
+
 .search-form{
   grid-area: search-form;
   display: grid;
   /* width: 711px; */
   /* height: 54px; */
+  /* grid-template-rows: 54px; */
+  grid-template-rows: 54px; /* 3 строки по 100 px */
+  grid-template-columns: 225px 212px 194px;
+  justify-content:space-between;
+}
 
 
+.search-form__fieldset{
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
 }
 .content__details{
   grid-area: content__details;
   width: 399px;
   height: 534px;
   gap: 26px;
+  display: grid;
+}
+
+
+
+.content__list-container{
+  /* display: grid; */
+  /* height: auto; */
+  width: 100%;
+  height: 100%;
+  gap: 26px;
+  overflow: auto;
+  
+}
+
+
+
+
+/* .search-form__label{
+  display: grid;
+  grid-column: 10;
+  justify-content: space-around;
+} */
+
+.content__list-item{
+  display: grid;
+  /* gap: ; */
+  width: 390px;
+  height: 502px;
+  gap: 30px 0px;
+}
+
+.content__video-card{
+  /* То как было до: */
+  /* display: flex;
+  flex-direction: column; */
+
+  /* То как стало после */
+  display: grid;
+  grid-template-columns: 196px 194px; */
+  /* gap: 30px;
+}
+
+.content__video-card-thumbnail{
+  width: 194px;
+  height: 103px;
+}
+
+.content__list-item{
+  width: 390px;
+  height: 103px;
+
 }
