@@ -291,13 +291,16 @@ ol {
 }
 
 
-
-
-
-
-
-/* .content__video-card-title{
-  text-decoration: none;
-} */
-
+.button{
+  /* position: absolute; */
+  width: 194px;
+  height: 34px;
+  color: white;
+  /* gap: 10px; */
+  background-color:  black;
+  border-width: 1px;
+  border-color: white;
+  margin-top: 20px;
+  /* margin-left: 517px; */
+}
 
