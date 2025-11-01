@@ -68,21 +68,30 @@ ol {
   height: 534px;
   top: 133px;
   left: 30px;
-  bottom: 0px;
+  /* bottom: 0px; */
   gap: 30px;
-  opacity: 1;
+  align-items: end;
 }
 
+.result{
+  display: grid;
+  align-items: end;
+}
 .result__video-container{
   grid-area: result__video-container;
   width: 711px;
   height: 456px;
   gap: 16px;
-
+  align-items: end;
 }
 
 .search-form{
   grid-area: search-form;
+  display: grid;
+  /* width: 711px; */
+  /* height: 54px; */
+
+
 }
 .content__details{
   grid-area: content__details;
