@@ -490,19 +490,19 @@ ol {
 
 
 
-.content__video-card-description-container:active{
-  background: #545050;
+.search-form__textfield:active{
+  border-width: 1px;
+  border-color: white; 
 }
 
-.content__video-card-description-container:hover{
+/* .search-form__textfield:hover{
   text-decoration:underline;
   color: white;
   text-decoration-style: solid;
   text-decoration-thickness: 0;
+} */
 
-}
-
-.content__video-card:focus-visible{
+.search-form__textfield:focus-visible{
   border-width: 1px;
   border-color: white; 
 }
