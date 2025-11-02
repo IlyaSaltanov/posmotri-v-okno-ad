@@ -96,7 +96,7 @@ ol {
 }
 
 .title{
-  font-family: Oswald;
+  font-family: 'Oswald';
   font-weight: 700;
   /* font-style: Bold; */
   font-size: 75px;
@@ -160,7 +160,7 @@ ol {
   /* gap: 16px; */
   /* align-items: start; */
   /* align-self:first baseline; */
-  /* position: relative;  */
+  position: relative; 
   grid-column: 1/1;
   grid-row: 1/1;
 }
@@ -250,7 +250,7 @@ ol {
   grid-area: content__video-card-title;
   width: 196px;
   height: 30px;
-  font-family: Oswald;
+  font-family: 'Oswald';
   font-weight: 700;
   /* font-style: Bold; */
   font-size: 30px;
@@ -262,12 +262,11 @@ ol {
 
 .content__video-card-description{
   grid-area: content__video-card-description;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed';
   font-weight: 400;
   /* font-style:normal; */
   font-size: 18px;
   line-height: 16.2px;
-  letter-spacing: 0;
   color: white;
 
   width: 196px;
@@ -306,7 +305,7 @@ ol {
 
 
 .search-form__fieldset-title{
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed';
   font-weight: 400;
   font-style: Regular;
   font-size: 18px;
@@ -320,12 +319,22 @@ ol {
   border-top-color: #ccc;      /* цвет верхней рамки */
   border-bottom-color: #ccc;   /* цвет нижней рамки */
   color: white;         /* убираем рамку */
+
+  /* width: 225;
+  height: 27;
+  gap: 10px;
+  border-top-width: 1px;
+  border-bottom-width: 1px; */
+
+  padding: 5px 0px 5px 0px; 
+  /* Что бы инпут был ровно 27px */
+
 }
 
 
 
 .content__accent{
-  font-family: Oswald;
+  font-family: 'Oswald';
   font-weight: 700;
   /* font-style: Bold; */
   font-size: 75px;
@@ -376,7 +385,7 @@ ol {
 /* Зачем код ниже? */
 /* .error__title {
   color: #fff;
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -394,3 +403,106 @@ ol {
   grid-row: 1/1;
 }
 
+
+
+
+
+
+/* Реализация динамики */
+
+.search-form__checkbox-list{
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.search-form__label{
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+
+.search-form__fieldset-title{
+  font-family: 'Fira Sans Condensed';
+  /* font-family: 'Fira', Sans, Condensed; */
+  font-weight: 400;
+  /* font-style: Regular; */
+  font-size: 18px;
+}
+.search-form__checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  background: transparent;
+  /* cursor: pointer; */
+  /* position: relative; */
+  margin-right: 8px;
+}
+
+.visually-hidden:active {
+  background: white;
+}
+.visually-hidden:hover {
+  background: white;
+}
+
+.search-form__checkbox-list:focus-visible {
+  /* border: 1px; */
+  border-width: 1px;
+  border-color: white;  
+}
+
+
+.button:active{
+  background: #545050;
+}
+
+.button:hover{
+  text-decoration:underline;
+}
+
+.button:focus-visible{
+  border-width: 1px;
+  border-color: white; 
+}
+
+.content__video-card-description-container:active{
+  background: #545050;
+}
+
+.content__video-card-description-container:hover{
+  text-decoration:underline;
+  color: white;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0;
+
+}
+
+.content__video-card:focus-visible{
+  border-width: 1px;
+  border-color: white; 
+}
+
+
+
+
+.content__video-card-description-container:active{
+  background: #545050;
+}
+
+.content__video-card-description-container:hover{
+  text-decoration:underline;
+  color: white;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0;
+
+}
+
+.content__video-card:focus-visible{
+  border-width: 1px;
+  border-color: white; 
+}
