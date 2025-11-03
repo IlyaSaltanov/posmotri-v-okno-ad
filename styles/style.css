@@ -137,9 +137,9 @@ ol {
 
 
 .content__video-card-title{
-  white-space: nowrap;      /* Запрещает переносы строк */
-  overflow: hidden;         /* Скрывает выходящий за границы текст */
-  text-overflow: ellipsis; /* Добавляет многоточие в конце */
+  white-space: nowrap;  
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
@@ -157,7 +157,6 @@ ol {
 } */
 
 
-/* Добавляем относительное позиционирование */
 .result__video-container {
   grid-area: result__video-container;
   width: 711px;
@@ -238,18 +237,14 @@ ol {
 }
 
 
-.content__video-card-description-container{
-  /* flex-grow:inherit; Зачем он мне нужен?????? */
-
-
-  /* display: grid;
+/* .content__video-card-description-container{
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr; 
   gap: 6px; 
   grid-template-areas: "content__video-card-title",
-  "content__video-card-description"; */
-  
-}
+  "content__video-card-description";
+} */
 
 
 .content__video-card-title{
@@ -320,11 +315,11 @@ ol {
 }
 
 .search-form__textfield{
-  background: transparent; /* прозрачный фон */
-  border: 1px solid transparent;  /* базовая рамка (прозрачная) */
-  border-top-color: #ccc;      /* цвет верхней рамки */
-  border-bottom-color: #ccc;   /* цвет нижней рамки */
-  color: white;         /* убираем рамку */
+  background: transparent; 
+  border: 1px solid transparent;
+  border-top-color: #ccc;     
+  border-bottom-color: #ccc;   
+  color: white;         
 
   /* width: 225;
   height: 27;
@@ -387,8 +382,6 @@ ol {
   grid-row: 1/1;
 } */
 
-
-/* Зачем код ниже? */
 /* .error__title {
   color: #fff;
   font-family: 'Oswald', sans-serif;
