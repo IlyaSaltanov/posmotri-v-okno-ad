@@ -495,7 +495,7 @@ ol {
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
+  padding: 0px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
@@ -509,17 +509,18 @@ ol {
   border: 1px solid white;
   cursor: pointer;
   position: relative;
+  padding: 2px;
 }
 
 /* Псевдочекбокс - состояние при наведении */
 .search-form__pseudo-checkbox:hover {
   border-color: white;
+  background-color: white;
 }
 
 /* Псевдочекбокс - активное состояние */
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: white;
 }
 
 /* Галочка для активного состояния */
@@ -542,7 +543,7 @@ ol {
 
 /* Отключенное состояние */
 .search-form__checkbox:disabled + .search-form__pseudo-checkbox {
-  background-color: #f8f9fa;
+  background-color: white;
   border-color: #dee2e6;
   cursor: not-allowed;
 }
