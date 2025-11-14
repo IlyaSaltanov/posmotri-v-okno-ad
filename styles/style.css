@@ -428,33 +428,12 @@ ol {
   /* font-style: Regular; */
   font-size: 18px;
 }
-.search-form__checkbox {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 
-  width: 19px;
-  height: 19px;
-  border: 1px solid #fff;
-  background: transparent;
 
-  margin-right: 8px;
-}
 
-.visually-hidden:active {
-  background: white;
-}
-.visually-hidden:hover {
-  background: white;
-}
 
 /* .search-form__pseudo-checkbox */
 
-.search-form__checkbox-list:focus-visible {
-  /* border: 1px; */
-  border-width: 1px;
-  border-color: white;  
-}
 
 
 .button:active{
@@ -505,4 +484,68 @@ ol {
 .search-form__textfield:focus-visible{
   border-width: 1px;
   border-color: white; 
+}
+
+
+
+
+/* Скрываем нативный чекбокс */
+.search-form__checkbox.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Псевдочекбокс - неактивное состояние */
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Псевдочекбокс - состояние при наведении */
+.search-form__pseudo-checkbox:hover {
+  border-color: #007bff;
+}
+
+/* Псевдочекбокс - активное состояние */
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Галочка для активного состояния */
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Фокус состояние для доступности */
+.search-form__checkbox:focus + .search-form__pseudo-checkbox {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Отключенное состояние */
+.search-form__checkbox:disabled + .search-form__pseudo-checkbox {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+  cursor: not-allowed;
 }
