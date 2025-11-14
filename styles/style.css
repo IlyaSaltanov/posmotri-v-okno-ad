@@ -504,19 +504,16 @@ ol {
 /* Псевдочекбокс - неактивное состояние */
 .search-form__pseudo-checkbox {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background: white;
+  width: 19px;
+  height: 19px;
+  border: 1px solid white;
   cursor: pointer;
   position: relative;
-  transition: all 0.3s ease;
 }
 
 /* Псевдочекбокс - состояние при наведении */
 .search-form__pseudo-checkbox:hover {
-  border-color: #007bff;
+  border-color: white;
 }
 
 /* Псевдочекбокс - активное состояние */
