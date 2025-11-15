@@ -509,31 +509,25 @@ ol {
   border: 1px solid white;
   cursor: pointer;
   position: relative;
-  padding: 2px;
 }
 
 /* Псевдочекбокс - состояние при наведении */
 .search-form__pseudo-checkbox:hover {
-  border-color: white;
   background-color: white;
+
 }
 
 /* Псевдочекбокс - активное состояние */
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
   background-color: white;
+
 }
 
 /* Галочка для активного состояния */
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: '';
   position: absolute;
-  left: 6px;
-  top: 2px;
-  width: 6px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  border: 1px solid white;
 }
 
 /* Фокус состояние для доступности */
@@ -546,4 +540,9 @@ ol {
   background-color: white;
   border-color: #dee2e6;
   cursor: not-allowed;
+}
+
+
+.search-form__label{
+  gap: 5px;
 }
